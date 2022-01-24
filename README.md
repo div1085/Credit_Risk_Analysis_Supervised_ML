@@ -12,29 +12,35 @@ To create risk predicting model:
 
 ## Results:
 
- 1. Naive Random Oversampling: Balanced accuracy Score: 67%. The precision for the high_risk positivity is very low  at 1%, with very low F1 score. Thus model doesnot seems to be a good fit.
+ **1. Naive Random Oversampling:** Balanced accuracy Score: 67%. The precision for the high_risk positivity is very low  at 1%, with very low F1 score. Thus model doesnot seems to be a good fit.
  
-![Results Naive Random Oversampling]()
+![Results Naive Random Oversampling](https://github.com/div1085/Credit_Risk_Analysis/blob/64693996d98f3fb497950bf919906e50a0049b67/resources/Naive%20Random%20Oversampling.png)
 
-  2. SMOTE Oversampling: Balanced accuracy Score: 66%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. With low high_risk F1 score, the model doesnot seems to be a good fit.
+
+  **2. SMOTE Oversampling:** Balanced accuracy Score: 66%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. With low high_risk F1 score, the model doesnot seems to be a good fit.
   
-![Results SMOTE Oversampling]()
+![Results SMOTE Oversampling](https://github.com/div1085/Credit_Risk_Analysis/blob/64693996d98f3fb497950bf919906e50a0049b67/resources/SMOTE%20Oversampling.png)
+
  
-  3. Cluster Centroids Undersampling: Balanced accuracy Score: 54%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%.
+  **3. Cluster Centroids Undersampling:** Balanced accuracy Score: 54%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%.
   
-![Results Cluster Centroids Undersampling]() 
+![Results Cluster Centroids Undersampling](https://github.com/div1085/Credit_Risk_Analysis/blob/64693996d98f3fb497950bf919906e50a0049b67/resources/Cluster%20Centroids.png) 
+
  
-  4. SMOTEENN - Combination (Over and Under) Sampling: Balanced accuracy Score: 64%. The precision for the high_risk positivity is very low  at 3%, with overall  low F1 score, the model doesnot seems to be a good fit.
+  **4. SMOTEENN - Combination (Over and Under) Sampling:** Balanced accuracy Score: 64%. The precision for the high_risk positivity is very low  at 3%, with overall  low F1 score, the model doesnot seems to be a good fit.
 
-![Results SMOTEENN]()
+![Results SMOTEENN](https://github.com/div1085/Credit_Risk_Analysis/blob/64693996d98f3fb497950bf919906e50a0049b67/resources/SMOTEENN.png)
 
-  5. Balanced Random Forest Classifier: Balanced accuracy Score: 78.8%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. Overall F1 score is also high at 93%.
+
+  **5. Balanced Random Forest Classifier:** Balanced accuracy Score: 78.8%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. Overall F1 score is also high at 93%.
   
-![Results Balanced Random Forest Classifier]()  
+![Results Balanced Random Forest Classifier](https://github.com/div1085/Credit_Risk_Analysis/blob/33e4d9239d8d10c084e8e84a97ed610c45e417e9/resources/Balanced%20Random%20Forest%20Classifier.png)  
 
-  6. Easy Ensemble AdaBoost Classifier: Balanced accuracy Score: 78.8%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. Overall F1 score is also high at 93%.
+
+  **6. Easy Ensemble AdaBoost Classifier:** Balanced accuracy Score: 78.8%. The precision for the high_risk positivity is very low  at 1%, while overall precision is 99%. Overall F1 score is also high at 93%.
   
-![Results Easy Ensemble AdaBoost Classifier]()
+![Results Easy Ensemble AdaBoost Classifier](https://github.com/div1085/Credit_Risk_Analysis/blob/33e4d9239d8d10c084e8e84a97ed610c45e417e9/resources/Easy%20Ensemble%20AdaBoost%20Classifier.png)
+
 
 ### Summary of the results:
 Both the Ensemble models have performed well when compared to models where data was over or under sampled. The ensmble method have overall score of 79%, while all other random sampling models had balanced accuracy scores ranging between 54% to 67%.
