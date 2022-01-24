@@ -5,12 +5,13 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 ## Overview of the loan prediction risk analysis:
 
 To create risk predicting model:
-  - Firstly, data will be oversampled using the RandomOverSampler and SMOTE algorithm. 
-  - In next step, undersample the data using the ClusterCentroids algorithm.
-  - Next utilizing combinatorial approach of over- and undersampling, data will be resmapled using the SMOTEENN algorithm
-  - Using the resampled data, two new machine learning models - BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk are created, and       performance of these models are compared.
+  - Firstly, data will be oversampled using the RandomOverSampler and SMOTE algorithm models. 
+  - In next step, undersample the data using the ClusterCentroids algorithm models.
+  - Next utilizing combinatorial approach of over- and undersampling, data will be resmapled using the SMOTEENN algorithm models.
+  - Using the resampled data, two new machine learning models - BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk are created, and       performance of all these models are compared.
 
 ## Results:
+
  1. Naive Random Oversampling: Balanced accuracy Score: 67%. The precision for the high_risk positivity is very low  at 1%, with very low F1 score. Thus model doesnot seems to be a good fit.
  
 ![Results Naive Random Oversampling]()
